@@ -11,8 +11,7 @@
 
 /* ============================================
    CSS Custom Properties (Design Tokens)
-   2025 Design Trend: Earthy Mocha Mousse Palette
-   ============================================ */
+     ============================================ */
 :root {
   /* Color Palette - Light Mode (Mocha Mousse & Earthy Tones) */
   --color-mocha: #a08676;
@@ -55,7 +54,7 @@
   --shadow-medium: 0 8px 30px rgba(0, 0, 0, 0.12);
 }
 
-/* Transitions (fixed – no nested :root) */
+/* Transitions  */
 :root {
   --transition-smooth: 0.3s cubic-bezier(0.4, 0, 0.2, 1);
   --transition-fast: 0.2s ease;

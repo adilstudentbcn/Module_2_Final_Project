@@ -1,9 +1,3 @@
-/**
- * Modern Vanilla JavaScript
- * Mobile Navigation, Smooth Scroll, Form Handling,
- * Active Nav (ARIA) & IntersectionObserver animations
- */
-
 // ============================================
 // Mobile Navigation Toggle
 // ============================================
