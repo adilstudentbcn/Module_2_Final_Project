@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Elevate — Crafting Digital Experiences</title>
+
+    <!-- Description -->
+    <meta
+      name="description"
+      content="A modern, responsive website built with clean HTML, CSS, and JavaScript — warm earthy design, elegant motion, and great performance."
+    />
+
+    <!-- Canonical -->
+    <link
+      rel="canonical"
+      href="https://adilstudentbcn.github.io/M2ProgrammingInteractivity/"
+    />
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="Elevate" />
+    <meta
+      property="og:title"
+      content="Elevate — Crafting Digital Experiences"
+    />
+    <meta
+      property="og:description"
+      content="Experience the future of web design with modern elegance, warm tones, and thoughtful motion."
+    />
+    <meta
+      property="og:url"
+      content="https://adilstudentbcn.github.io/M2ProgrammingInteractivity/"
+    />
+    <meta
+      property="og:image"
+      content="https://adilstudentbcn.github.io/M2ProgrammingInteractivity/assets/og-image.jpg"
+    />
+
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta
+      name="twitter:title"
+      content="Elevate — Crafting Digital Experiences"
+    />
+    <meta
+      name="twitter:description"
+      content="Experience the future of web design with modern elegance, warm tones, and thoughtful motion."
+    />
+    <meta
+      name="twitter:image"
+      content="https://adilstudentbcn.github.io/M2ProgrammingInteractivity/assets/og-image.jpg"
+    />
+
+    <!-- Theme color -->
+    <meta name="theme-color" content="#A08676" />
+
+    <!-- Fonts & CSS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <script src="script.js" defer></script>
+  </head>
+
+  <body>
+    <a class="skip-link" href="#main-content">Skip to main content</a>
+
+    <!-- Header with navigation -->
+    <header class="header" role="banner">
+      <div class="header-container">
+        <a href="#home" class="logo" aria-label="Home">
+          <span class="logo-text">Elevate</span>
+        </a>
+
+        <nav class="nav" role="navigation" aria-label="Main navigation">
+          <ul class="nav-list" id="navList">
+            <li><a href="#home" class="nav-link">Home</a></li>
+            <li><a href="#pricing" class="nav-link">Pricing</a></li>
+            <li><a href="#about" class="nav-link">About</a></li>
+            <li><a href="#contact" class="nav-link">Contact</a></li>
+          </ul>
+        </nav>
+
+        <button
+          class="mobile-toggle"
+          id="mobileToggle"
+          type="button"
+          aria-label="Toggle navigation menu"
+          aria-expanded="false"
+          aria-controls="navList"
+        >
+          <span class="hamburger"></span>
+          <span class="hamburger"></span>
+          <span class="hamburger"></span>
+        </button>
+        <button
+          class="theme-toggle"
+          id="themeToggle"
+          type="button"
+          aria-label="Toggle dark mode"
+          aria-pressed="false"
+          title="Toggle dark / light"
+        >
+          <span class="theme-toggle-icon" aria-hidden="true">🌙</span>
+        </button>
+      </div>
+    </header>
+
+    <main id="main-content">
+      <!-- Hero Section -->
+      <section class="hero" id="home">
+        <div class="hero-content">
+          <h1 class="hero-title">Crafting Digital<br />Experiences</h1>
+          <p class="hero-subtitle">
+            Embrace the future with warm, grounded design that speaks to the
+            modern era. Built with precision, delivered with purpose.
+          </p>
+          <div class="hero-actions">
+            <a href="#contact" class="btn btn-primary">Get Started</a>
+            <a href="#pricing" class="btn btn-secondary">Learn More</a>
+          </div>
+        </div>
+      </section>
+
+      <!-- Pricing Section -->
+      <section class="section pricing" id="pricing">
+        <div class="container">
+          <h2 class="section-title">Pricing Plan</h2>
+          <p class="section-subtitle">
+            Choose the perfect plan for your needs.
+          </p>
+
+          <div class="pricing-grid">
+            <!-- Starter -->
+            <article class="pricing-card">
+              <h3 class="pricing-title">Starter</h3>
+              <p class="pricing-description">$19.99/month</p>
+              <ul>
+                <li><span class="check">✔</span>Basic Features</li>
+                <li><span class="check">✔</span>Unlimited Projects</li>
+                <li><span class="check">✔</span>24/7 Support</li>
+              </ul>
+              <div class="pricing-cta">
+                <a
+                  href="#contact"
+                  class="btn btn-secondary choose-plan"
+                  data-plan="Starter"
+                  aria-label="Choose Starter plan"
+                >
+                  Choose Starter
+                </a>
+              </div>
+            </article>
+
+            <!-- Professional (Most Popular) -->
+            <article class="pricing-card">
+              <span class="plan-badge" aria-hidden="true">Most Popular</span>
+              <h3 class="pricing-title">Professional</h3>
+              <p class="pricing-description">$49.99/month</p>
+              <ul>
+                <li><span class="check">✔</span>Advanced Features</li>
+                <li><span class="check">✔</span>Unlimited Projects</li>
+                <li><span class="check">✔</span>Priority Support</li>
+              </ul>
+              <div class="pricing-cta">
+                <a
+                  href="#contact"
+                  class="btn btn-primary choose-plan"
+                  data-plan="Professional"
+                  aria-label="Choose Professional plan"
+                >
+                  Choose Professional
+                </a>
+              </div>
+            </article>
+
+            <!-- Enterprise -->
+            <article class="pricing-card">
+              <h3 class="pricing-title">Enterprise</h3>
+              <p class="pricing-description">$99.99/month</p>
+              <ul>
+                <li><span class="check">✔</span>All Features</li>
+                <li><span class="check">✔</span>Unlimited Projects</li>
+                <li><span class="check">✔</span>Dedicated Support</li>
+              </ul>
+              <div class="pricing-cta">
+                <a
+                  href="#contact"
+                  class="btn btn-secondary choose-plan"
+                  data-plan="Enterprise"
+                  aria-label="Choose Enterprise plan"
+                >
+                  Contact Sales
+                </a>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- About Section -->
+      <section class="section about" id="about">
+        <div class="container">
+          <div class="about-content">
+            <div class="about-text">
+              <h2 class="section-title">Grounded in Excellence</h2>
+              <p class="about-description">
+                We believe in the power of simplicity and the elegance of
+                thoughtful design. Our approach combines warm, earthy aesthetics
+                with bold typography and generous whitespace to create
+                experiences that resonate.
+              </p>
+              <p class="about-description">
+                Every pixel serves a purpose. Every interaction feels natural.
+                This is design that doesn't just look good—it works beautifully.
+              </p>
+              <a href="#contact" class="btn btn-outline">Start Your Journey</a>
+            </div>
+            <div class="about-visual">
+              <img
+                src="assests/about-workspace.jpg"
+                alt="Creative workspace with designers collaborating"
+                class="about-image liquid"
+                width="1200"
+                height="800"
+                loading="lazy"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- VIDEO SECTION -->
+      <section class="section video-section" id="video">
+        <div class="container">
+          <h2 class="section-title">Design in Motion</h2>
+          <p class="section-subtitle">See creativity come alive in action.</p>
+
+          <div class="video-wrapper">
+            <video id="backgroundVideo" loop muted playsinline>
+              <source
+                src="assests/videos/elevate-studio.mp4"
+                type="video/mp4"
+              />
+              Your browser does not support the video tag.
+            </video>
+          </div>
+        </div>
+      </section>
+
+      <!-- Contact Section -->
+      <section class="section contact" id="contact">
+        <div class="container">
+          <h2 class="section-title">Let's Connect</h2>
+          <p class="section-subtitle">
+            Ready to elevate your digital presence?
+          </p>
+
+          <form class="contact-form" id="contactForm">
+            <div class="form-group">
+              <label for="name" class="form-label">Name</label>
+              <input
+                type="text"
+                id="name"
+                name="name"
+                class="form-input"
+                placeholder="Your name"
+                autocomplete="name"
+                required
+                aria-required="true"
+              />
+            </div>
+
+            <div class="form-group">
+              <label for="email" class="form-label">Email</label>
+              <input
+                type="email"
+                id="email"
+                name="email"
+                class="form-input"
+                placeholder="your@email.com"
+                autocomplete="email"
+                required
+                aria-required="true"
+              />
+            </div>
+
+            <div class="form-group">
+              <label for="message" class="form-label">Message</label>
+              <textarea
+                id="message"
+                name="message"
+                class="form-textarea"
+                placeholder="Tell us about your project..."
+                rows="5"
+                required
+                aria-required="true"
+              ></textarea>
+            </div>
+
+            <button type="submit" class="btn btn-primary btn-full">
+              Send Message
+            </button>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer" role="contentinfo">
+      <div class="container">
+        <div class="footer-grid">
+          <div class="footer-brand">
+            <span class="footer-logo">Elevate</span>
+            <p class="footer-tagline">
+              Crafting the future, one pixel at a time.
+            </p>
+          </div>
+
+          <div class="footer-links">
+            <h3 class="footer-heading">Quick Links</h3>
+            <ul class="footer-list">
+              <li><a href="#home" class="footer-link">Home</a></li>
+              <li><a href="#pricing" class="footer-link">Pricing</a></li>
+              <li><a href="#about" class="footer-link">About</a></li>
+              <li><a href="#contact" class="footer-link">Contact</a></li>
+            </ul>
+          </div>
+
+          <div class="footer-links">
+            <h3 class="footer-heading">Follow Us</h3>
+            <ul class="footer-list">
+              <li><a href="#" class="footer-link">Twitter</a></li>
+              <li><a href="#" class="footer-link">LinkedIn</a></li>
+              <li><a href="#" class="footer-link">Instagram</a></li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="footer-bottom">
+          <p class="copyright">&copy; 2025 Elevate. All rights reserved.</p>
+        </div>
+      </div>
+    </footer>
+    <!-- Liquid water-flow filter (SVG) -->
+    <svg
+      width="0"
+      height="0"
+      aria-hidden="true"
+      focusable="false"
+      style="position: absolute"
+    >
+      <filter id="liquid-water">
+        <!-- Organic noise -->
+        <feTurbulence
+          type="fractalNoise"
+          baseFrequency="0.012 0.02"
+          numOctaves="2"
+          seed="3"
+          result="noise"
+        >
+          <!-- Gentle, endless drift -->
+          <animate
+            attributeName="baseFrequency"
+            dur="9s"
+            values="0.012 0.02; 0.02 0.012; 0.012 0.02"
+            repeatCount="indefinite"
+          />
+        </feTurbulence>
+
+        <!-- Displace the source graphic with the noise -->
+        <feDisplacementMap
+          id="liquid-displace"
+          in="SourceGraphic"
+          in2="noise"
+          scale="8"
+          xChannelSelector="R"
+          yChannelSelector="G"
+        >
+          <!-- Breathe the intensity -->
+          <animate
+            attributeName="scale"
+            dur="7s"
+            values="6;12;6"
+            repeatCount="indefinite"
+          />
+        </feDisplacementMap>
+      </filter>
+    </svg>
+  </body>
+</html>
